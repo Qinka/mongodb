@@ -1,0 +1,132 @@
+Source: haskell-mongodb
+Maintainer: Johann Lee <me@qinka.pro>
+Uploaders: Johann Lee <me@qinka.pro>
+Priority: extra
+Section: haskell
+Build-Depends: debhelper (>= 9),
+ haskell-devscripts (>= 0.8),
+ cdbs,
+ ghc,
+ ghc-prof,
+ libghc-base16-bytestring-dev (>= 0.1.1.6),
+ libghc-base16-bytestring-prof (>= 0.1.1.6),
+ libghc-base64-bytestring-dev (>= 1.0.0.1),
+ libghc-base64-bytestring-prof (>= 1.0.0.1),
+ libghc-bson-dev (>= 0.3),
+ libghc-bson-dev (<< 0.4),
+ libghc-bson-prof (>= 0.3),
+ libghc-bson-prof (<< 0.4),
+ libghc-conduit-dev,
+ libghc-conduit-prof,
+ libghc-conduit-extra-dev,
+ libghc-conduit-extra-prof,
+ libghc-cryptohash-dev,
+ libghc-cryptohash-prof,
+ libghc-data-default-class-dev,
+ libghc-data-default-class-prof,
+ libghc-hashtables-dev (>= 1.1.2.0),
+ libghc-hashtables-prof (>= 1.1.2.0),
+ libghc-lifted-base-dev (>= 0.1.0.3),
+ libghc-lifted-base-prof (>= 0.1.0.3),
+ libghc-monad-control-dev (>= 0.3.1),
+ libghc-monad-control-prof (>= 0.3.1),
+ libghc-mtl-dev (>= 2),
+ libghc-mtl-prof (>= 2),
+ libghc-network-dev,
+ libghc-network-prof,
+ libghc-nonce-dev (>= 1.0.5),
+ libghc-nonce-prof (>= 1.0.5),
+ libghc-parsec3-dev,
+ libghc-parsec3-prof,
+ libghc-puremd5-dev,
+ libghc-puremd5-prof,
+ libghc-random-dev,
+ libghc-random-prof,
+ libghc-random-shuffle-dev,
+ libghc-random-shuffle-prof,
+ libghc-resourcet-dev,
+ libghc-resourcet-prof,
+ libghc-stm-dev,
+ libghc-stm-prof,
+ libghc-tagged-dev,
+ libghc-tagged-prof,
+ libghc-text-dev,
+ libghc-text-prof,
+ libghc-tls-dev (>= 1.3.0),
+ libghc-tls-prof (>= 1.3.0),
+ libghc-transformers-base-dev (>= 0.4.1),
+ libghc-transformers-base-prof (>= 0.4.1),
+ libghc-hspec-dev (>= 2),
+ libghc-mtl-dev,
+ libghc-old-locale-dev,
+Build-Depends-Indep: ghc-doc,
+ libghc-base16-bytestring-doc,
+ libghc-base64-bytestring-doc,
+ libghc-bson-doc,
+ libghc-conduit-doc,
+ libghc-conduit-extra-doc,
+ libghc-cryptohash-doc,
+ libghc-data-default-class-doc,
+ libghc-hashtables-doc,
+ libghc-lifted-base-doc,
+ libghc-monad-control-doc,
+ libghc-mtl-doc,
+ libghc-network-doc,
+ libghc-nonce-doc,
+ libghc-parsec3-doc,
+ libghc-puremd5-doc,
+ libghc-random-doc,
+ libghc-random-shuffle-doc,
+ libghc-resourcet-doc,
+ libghc-stm-doc,
+ libghc-tagged-doc,
+ libghc-text-doc,
+ libghc-tls-doc,
+ libghc-transformers-base-doc,
+Standards-Version: 3.9.6
+Homepage: https://github.com/mongodb-haskell/mongodb
+X-Description: Driver (client) for MongoDB, a free, scalable, fast, document DBMS
+ This package lets you connect to MongoDB servers and
+ update/query their data. Please see the example in
+ Database.MongoDB and the tutorial from the homepage. For
+ information about MongoDB itself, see www.mongodb.org.
+
+Package: libghc-mongodb-dev
+Architecture: any
+Depends: ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Provides: ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-mongodb-prof
+Architecture: any
+Depends: ${haskell:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Provides: ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-mongodb-doc
+Architecture: all
+Section: doc
+Depends: ${haskell:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}

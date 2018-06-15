@@ -1,0 +1,5 @@
+haskell-mongodb (2.4.0.0-distro()6) distro(); urgency=medium
+
+  * Original https://github.com/mongodb-haskell/mongodb
+
+ -- Johann Lee <me@qinka.pro>  esyscmd(`date -R')
